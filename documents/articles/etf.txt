@@ -1,0 +1,149 @@
+Title: ETF
+Source: Investopedia
+URL: https://www.investopedia.com/terms/e/etf.asp
+Summary: The article describes Exchange-Traded Funds (ETFs) as investment funds that hold a basket of securities, such as stocks, bonds, commodities, or currencies. ETFs are traded on stock exchanges like individual stocks, making them more accessible and cost-effective than mutual funds.
+
+Exchange-Traded Fund (ETF): What It Is and How to Invest
+An exchange-traded fund (ETF) pools a group of securities into a fund and can be traded like an individual stock on an exchange.
+
+Key Takeaways
+
+An exchange-traded fund is a basket of securities that trades on an exchange, just like a stock.
+ETF share prices fluctuate throughout the trading day, unlike mutual funds, which only trade once a day after the market closes.
+ETFs offer low expense ratios and fewer brokerage commissions than buying stocks individually.
+What Is an Exchange-Traded Fund (ETF)?
+
+An exchange-traded fund (ETF) is an investment fund that holds multiple underlying assets. It can be bought and sold on an exchange, much like an individual stock. ETFs can be structured to track anything from the price of a commodity to a large and diverse collection of stocks—even specific investment strategies.
+
+Various ETFs are available to investors for income generation, speculation, or hedging risk in a portfolio. The first ETF in the U.S. was the SPDR S&P 500 ETF (SPY), which tracks the S&P 500 Index.1
+
+Illustration of two piggy banks with arrows between them accompanied by text explaining ETFs: An echange-traded fund (EFT is a type of pooled investment security that holds multiple underlying assets, rather than only one.
+Exchange-traded funds are a simple, affordable, and easy way to invest, helping you diversify your portfolio in a low-cost way.
+
+
+How ETFs Work
+
+In the U.S., ETFs must be registered with the Securities and Exchange Commission (SEC).2 Most ETFs are set up as open-ended funds and are subject to the Investment Company Act of 1940, except where the rules modify their regulatory requirements.3 Open-ended funds do not limit the number of investors involved in the product.
+
+Vanguard's Consumer Staples ETF (VDC) tracks the MSCI US Investable Market Consumer Staples 25/50 Index and has a minimum investment of $1.00.4 The fund holds shares of all 105 companies on the index, some more familiar than others because they produce or sell consumer items. A few of the companies held by VDC are Procter & Gamble, Costco, Coca-Cola, Walmart, and PepsiCo.5
+
+Ready to Take the Next Step?
+
+There is no transfer of ownership because investors buy a share of the fund, which owns the shares of the underlying companies. Unlike mutual funds, ETF share prices are determined throughout the day. A mutual fund trades only once a day after the markets close.
+
+Important
+
+Volatility is limited with an ETF because its holdings are diversified across various assets. Industry ETFs are also used to rotate in and out of sectors during economic cycles.
+
+Types of ETFs
+
+Online brokers may allow you to invest in a wide variety of ETFs, including the following.
+
+Passive ETFs: Passive ETFs aim to replicate the performance of a broader index—either a diversified index such as the S&P 500 or a more targeted sector or trend.
+Actively managed ETFs: These ETFs don't target an index. Instead, portfolio managers make decisions about which securities to buy and sell. Actively managed ETFs offer benefits over passive ETFs, but they charge higher fees.
+Bond ETFs: Used to provide regular income to investors. Distribution depends on the performance of underlying bonds, which may include government, corporate, and state and local bonds, usually called municipal bonds. Unlike their underlying instruments, bond ETFs do not have a maturity date.6
+Industry or sector ETFs: A basket of stocks that track a single industry or sector, like automotive or energy. The aim is to provide diversified exposure to a single industry, one that includes high performers and new entrants with growth potential. BlackRock's iShares U.S. Technology ETF (IYW), for example, tracks the Russell 1000 Technology RIC 22.5/45 Capped Index.7
+Commodity ETFs: Invest in commodities like crude oil or gold. Commodity ETFs can diversify a portfolio. Holding shares in a commodity ETF is less expensive than owning the physical commodity.
+Currency ETFs: Track the performance of currency pairs and can be used to speculate on the exchange rates of currencies based on political and economic developments in a country. Some use them to diversify a portfolio, while importers and exporters use them to hedge against volatility in currency markets.
+Bitcoin ETFs: The spot Bitcoin ETF was approved by the SEC in 2024.8 These ETFs expose investors to Bitcoin's price moves in their regular brokerage accounts by purchasing and holding Bitcoin as the underlying asset. Bitcoin futures ETFs, approved in 2021, use futures contracts traded on the Chicago Mercantile Exchange and track the price movements of bitcoin futures contracts.9
+Ethereum ETFs: Spot Ether ETFs provide a way to invest in Ether, the native currency of the Ethereum blockchain, without directly owning the cryptocurrency. In May 2024, the SEC allowed Nasdaq, the Chicago Board Options Exchange, and the NYSE to list ETFs holding Ether.10 In July 2024, the SEC officially approved nine spot Ether ETFs to begin trading on U.S. exchanges.
+Inverse ETFs: Earn gains from stock declines without having to short stocks. An inverse ETF uses derivatives to short a stock. Inverse ETFs are exchange-traded notes (ETNs) and not true ETFs. An ETN is a bond that trades like a stock and is backed by an issuer such as a bank.
+Leveraged ETFs: A leveraged ETF seeks to return some multiples (e.g., 2× or 3×) on the return of the underlying investments. If the S&P 500 rises 1%, a 2× leveraged S&P 500 ETF will return 2% (and if the index falls by 1%, the ETF would lose 2%). These products use debt and derivatives, such as options or futures contracts, to leverage their returns.
+Fast Fact
+
+There are three ETFs focused on gold mining companies, excluding inverse and leveraged ETFs and those with relatively low assets under management (AUM).11
+
+Pros and Cons of ETFs
+
+Pros
+
+Exposure to many stocks across various industries
+
+Low expense ratios and commissions
+
+Risk management through diversification
+
+Can focus on targeted industries or commodities
+
+Cons
+
+Actively managed ETFs have higher fees
+
+Single-industry-focused ETFs limit diversification
+
+Lack of liquidity hinders transactions
+
+How to Invest in ETFs
+
+ETFs trade through online brokers and traditional broker-dealers. Individuals can also purchase ETFs in their retirement accounts. An alternative to standard brokers is a robo-advisor like Betterment and Wealthfront.1213
+
+An ETF’s expense ratio is the cost to operate and manage the fund. ETFs typically have low expenses because they track an index.
+
+ETFs are available on most online investing platforms and retirement account provider sites, along with investing apps like Robinhood. Most of these platforms offer commission-free trading, meaning that investors don’t have to pay fees to the platform providers to buy or sell ETFs.
+
+After creating and funding a brokerage account, investors can search for ETFs and buy and sell as desired. One of the best ways to narrow ETF options is to utilize an ETF screening tool with criteria such as trading volume, expense ratio, past performance, holdings, and commission costs.
+
+Tip
+
+Order a copy of Investopedia's What To Do With $10,000 for more wealth-building advice.
+
+Popular ETFs
+
+Below are some popular ETFs. Some ETFs track an index of stocks, thus creating a broad portfolio, while others target specific industries.
+
+SPDR S&P 500 (SPY): The oldest and most widely known ETF tracks the S&P 500.1
+iShares Russell 2000 (IWM): An ETF that tracks the Russell 2000 small-cap index.14
+Invesco QQQ (QQQ): Known as "cubes," it tracks the tech-heavy Nasdaq 100 Index.15
+SPDR Dow Jones Industrial Average (DIA): Known as "diamonds," it tracks the 30 stocks of the Dow Jones Industrial Average (DJIA).16
+Sector ETFs: ETFs that track individual industries and sectors such as oil (OIH), energy (XLE), financial services (XLF), real estate investment trusts (IYR), and biotechnology (BBH).
+Commodity ETFs: These ETFs track commodities, including gold (GLD), silver (SLV), crude oil (USO), and natural gas (UNG).
+Country ETFs: Funds that track the primary stock indexes in foreign countries but are traded in the U.S. in dollars. Examples include China (MCHI), Brazil (EWZ), Japan (EWJ), and Israel (EIS). Others track foreign markets across multiple countries, such as emerging market economies (EEM) and developed market economies (EFA).
+ETFs vs. Mutual Funds vs. Stocks
+
+Most stocks, ETFs, and mutual funds can be bought and sold without a commission. Funds and ETFs differ from stocks because some of them charge management fees, though fees have been trending lower for years. ETFs tend to have lower fees than mutual funds.
+
+Active vs. Passive Equity Funds
+
+Dividends and Taxes
+
+ETF investors can also benefit from companies that pay dividends. Dividends are a portion of earnings allocated to investors. ETF shareholders are entitled to a share of earned interest or dividends and may get a residual value if the fund is liquidated.
+
+An ETF is more tax-efficient than a mutual fund because most buying and selling occurs through an exchange, and the ETF sponsor doesn't need to redeem shares each time an investor wishes to sell shares of the ETF.
+
+Each time an investor sells their mutual fund shares, they sell them back to the fund and incur a tax liability that must be paid by the fund's shareholders.17
+
+Creation and Redemption
+
+The supply of ETF shares is regulated through creation and redemption, which involves large specialized investors called authorized participants (APs). When an ETF manager wants to issue additional shares, the AP buys shares of the stocks from the index—such as the S&P 500 tracked by the fund—and sells or exchanges them to the ETF for new ETF shares at an equal value. In turn, the AP sells the ETF shares in the market for a profit.
+
+When an AP sells stocks to the ETF sponsor in return for shares in the ETF, the block of shares used in the transaction is called a creation unit. If an ETF closes with a share price of $101 and the value of the stocks that the ETF owns is only worth $100 on a per-share basis, then the fund’s price of $101 was traded at a premium to the fund’s net asset value (NAV). The NAV is an accounting mechanism that determines the overall value of the assets or stocks in an ETF.
+
+An AP also buys shares of the ETF on the open market. The AP then sells these shares back to the ETF sponsor in exchange for individual stock shares that the AP can sell on the open market. As a result, the number of ETF shares is reduced through the process called redemption. The amount of redemption and creation activity is a function of demand in the market and whether the ETF is trading at a discount or a premium to the value of the fund’s assets.
+
+ETFs in the United Kingdom
+
+The U.K. ETF market is one of the largest and most diverse in Europe. ETFs listed on the London Stock Exchange (LSE) offer exposure to various asset classes and markets, including equities, fixed income, commodities, currencies, real estate, and alternative investments.18
+
+Buying ETFs in the U.K. allows inclusion in Individual Savings Accounts (ISAs), which are tax-efficient savings vehicles that allow people to invest up to £20,000 per year without paying any income or capital gains tax on their returns.19 Another benefit is that ETFs attract no stamp duty, which is a tax levied on ordinary share transactions in the U.K.20
+
+Investors can buy shares in U.S.-listed companies from the U.K., but regulations prohibit the purchase of U.S.-listed ETFs in the U.K.21 Some U.K.-based ETFs track U.S. markets and have UCITS (Undertakings for the Collective Investment in Transferable Securities) in their names. This means the fund is fully regulated in the U.K. and allowed to track U.S. investments.22
+
+Several ETFs track the FTSE 100 index for broad exposure to U.K. equities. These consist of the 100 largest publicly listed companies in the country. The HSBC FTSE UCITS ETF is listed on the London Stock Exchange and trades under the ticker symbol HUKX.23 The ETF has an ongoing charge of 0.07% and a dividend yield of 3.16% as of November 2025.24
+
+Frequently Asked Questions (FAQs)
+
+What Was the First Exchange-Traded Fund?
+
+The distinction of being the first exchange-traded fund is often given to the SPDR S&P 500 ETF (SPY), launched by State Street Global Advisors on Jan. 22, 1993.1 There were, however, some precursors to SPY, including Index Participation Units listed on the Toronto Stock Exchange (TSX), which tracked the Toronto 35 Index and appeared in 1990.25
+
+How Is an ETF Different From an Index Fund?
+
+An index fund usually refers to a mutual fund that tracks an index. An index ETF is constructed in much the same way and will hold the stocks of an index. However, the difference between an index fund and an ETF is that an ETF tends to be more cost-effective and liquid than an index mutual fund. You can also buy an ETF throughout the trading day, while a mutual fund trades via a broker after the close of each trading day.
+
+Do ETFs Provide Diversification?
+
+Nearly all ETFs provide diversification relative to individual stock purchases. Still, some ETFs are highly concentrated—either in the number of different securities they hold or in the weighting of those securities. For example, a fund may concentrate half of its assets in two or three positions, offering less diversification than other funds with broader asset distribution.
+
+The Bottom Line
+
+Exchange-traded funds represent a cost-effective way to gain exposure to a broad basket of securities with a limited budget. Investors can build a portfolio that holds one or many ETFs. Instead of buying individual stocks, investors buy shares of a fund that targets a representative cross-section of the wider market. However, there can be additional expenses to keep in mind when investing in an ETF.

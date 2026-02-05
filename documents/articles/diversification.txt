@@ -1,0 +1,223 @@
+Title: Diversification
+Source: Investopedia
+URL: https://www.investopedia.com/terms/d/diversification.asp
+Summary: The article describes the concept of diversification in investing, explaining how it involves spreading investments across various asset classes and sectors to reduce risk. The article also discusses different strategies for diversification, including asset classes, industries, maturity lengths, platforms, and time horizons.
+
+What Is Diversification?
+
+Diversification is a risk management strategy that creates a mix of various investments within a portfolio. A diversified portfolio contains distinct asset types and investment vehicles in an attempt to limit exposure to any single asset or risk.
+
+The rationale behind this technique is that a portfolio constructed of different kinds of assets will, on average, yield higher long-term returns and lower the risk of any individual holding or security.
+
+Key Takeaways
+
+Diversification is a strategy that mixes a wide variety of investments within a portfolio in an attempt to reduce portfolio risk.
+Diversification is most often done by investing in different asset classes such as stocks, bonds, real estate, or cryptocurrency and then in different types of securities within a class.
+Diversification can also be achieved by purchasing investments in different countries, industries, sizes of companies, or term lengths for income-generating investments.
+The quality of diversification in a portfolio is most often measured by analyzing the correlation coefficient of pairs of assets.
+Investors can diversify on their own by investing in select investments or can hold diversified funds.
+Understanding Diversification
+
+Studies and mathematical models have shown that maintaining a well-diversified portfolio of 25 to 30 stocks yields the most cost-effective level of risk reduction. Investing in more securities generates further diversification benefits, but it does so at a substantially diminishing rate of effectiveness.
+
+Diversification strives to smooth out unsystematic risk events in a portfolio, so the positive performance of some investments neutralizes the negative performance of others. The benefits of diversification hold only if the securities in the portfolio are not perfectly correlated—that is, they respond differently, often in opposing ways, to market influences.
+
+Take the Next Step to Invest
+
+Diversification Strategies
+
+As investors consider ways to diversify their holdings, there are dozens of strategies to implement. Many of the methods below can be combined to enhance the level of diversification within a single portfolio.
+
+Asset Classes
+
+Fund managers and investors often diversify their investments across asset classes and determine what percentages of the portfolio to allocate to each. Each asset class has a different, unique set of risks and opportunities. Classes can include:
+
+Stocks: Shares or equity in a publicly traded company
+Bonds: Government and corporate fixed-income debt instruments
+Real estate: Land, buildings, natural resources, agriculture, livestock, and water and mineral deposits
+Exchange-traded funds (ETFs): A marketable basket of securities that follow an index, commodity, or sector
+Commodities: Basic goods necessary for the production of other products or services
+Cash and short-term cash-equivalents (CCE): Treasury bills, certificate of deposit (CD), money market vehicles, and other short-term, low-risk investments
+The theory holds that what may negatively impact one asset class may benefit another. For example, rising interest rates usually negatively impact bond prices as yield must increase to make fixed income securities more attractive. On the other hand, rising interest rates may result in increases in rent for real estate or increases in prices for commodities.
+
+Tip
+
+Order your copy of Investopedia's What To Do With $10,000 magazine for more wealth-building advice.
+
+Industries/Sectors
+
+There are tremendous differences in the way different industries or sectors operate. As investors diversify across various industries, they become less likely to be impacted by sector-specific risk.
+
+For example, consider the CHIPS and Science Act of 2022.1 This legislation impacts many industries, though some companies are more affected than others. Semiconductor manufacturers will be largely impacted, while the financial services sector might feel smaller, residual impacts.
+
+Investors can diversify across industries by coupling investments that may counterbalance different businesses. For example, consider two major means of entertainment: travel and digital streaming. Investors hoping to hedge against the risk of future major pandemic impacts may invest in digital streaming platforms (positively impacted by more shutdowns). At the same time, they may consider simultaneously investing in airlines (positively impacted by fewer shutdowns). In theory, these two unrelated industries may minimize overall portfolio risk.
+
+Important
+
+How many stocks do you need to own to be properly diversified? A study published in the Journal of Risk and Financial Management found there are simply too many variables to consider, and "an optimal number of stocks that constitute a well-diversified portfolio does not exist."2
+
+Corporate Lifecycle Stages (Growth vs. Value)
+
+Public equities tend to be broken into two categories: growth stocks and value stocks. Growth stocks are stocks in companies that are expected to experience profit or revenue growth greater than the industry average. Value stocks are stocks in companies that appear to be trading at a discount based on the current fundamentals of a company.
+
+Growth stocks tend to be more risky as the expected growth of a company may not materialize. For example, if the Federal Reserve constricts monetary policy, less capital is usually available (or it is more expensive to borrow), creating a more difficult scenario for growth companies. However, growth companies may tap into seemingly limitless potential and exceed expectations, generating even greater returns than expected.
+
+On the other hand, value stocks tend to be more established, stable companies. While these companies may have already experienced most of their potential, they usually carry less risk. By diversifying into both, an investor would capitalize on the future potential of some companies while also recognizing the existing benefits of others.
+
+Market Capitalizations (Large vs. Small)
+
+Investors may want to consider investing across different securities based on the underlying market capitalization of the asset or company. Consider the vast operational differences between Apple and Newell Brands Inc. In July 2023, both companies were in the S&P 500, with Apple representing 7.6% of the index and Newell Brands representing 0.0065%.3
+
+Each company will have a considerably different approach to raising capital, introducing new products to the market, brand recognition, and growth potential. Lower cap stocks have more room to grow, though higher cap stocks tend to be safer investments.
+
+Risk Profiles
+
+Across almost every asset class, investors can choose the underlying risk profile of the security. For example, consider fixed-income securities. An investor can choose to buy bonds from the top-rated governments in the world or from nearly defunct private companies raising emergency funds. There are considerable differences between several 10-year bonds based on the issuer, their credit rating, future operational outlook, and existing level of debt.
+
+The same can be said for other types of investments. Real estate development projects with more risk may carry greater upside than established operating properties. Meanwhile, cryptocurrencies with longer histories and greater adoption, such as Bitcoin, carry less risk relative to smaller market cap coins or tokens.
+
+Tip
+
+Diversification may not be the best strategy for investors wanting to maximize their returns. Consider "YOLO" (you only live once) strategies where 100% of capital is placed in a high-risk investment. Though there is a higher probability of making life-changing money, there is also the highest probability of losing it due to poor diversification.
+
+Maturity Lengths
+
+Specific to fixed-income securities such as bonds, different term lengths impact risk profiles. Generally, the longer the maturity, the higher the risk of fluctuations in the bond's prices due to changes in interest rates. Short-term bonds tend to offer lower interest rates; however, they also tend to be less impacted by uncertainty in future yield curves. Investors more comfortable with risk may consider adding longer term bonds that tend to pay higher degrees of interest.
+
+Maturity length is also prevalent in other asset classes. Consider the difference between short-term lease agreements for residential properties (i.e., up to one year) and long-term lease agreements for commercial properties (i.e., sometimes five years or greater). Though there is more security in collecting rent revenue by locking into a long-term agreement, investors sacrifice flexibility to increase prices or change tenants.
+
+Physical Locations (Foreign vs. Domestic)
+
+Investors can reap further diversification benefits by investing in foreign securities. For example, forces depressing the U.S. economy may not affect Japan's economy in the same way. Therefore, holding Japanese stocks gives an investor a small cushion of protection against losses during an American economic downturn.
+
+Alternatively, there may be a greater potential upside (with associated higher degrees of risk) when diversifying across developed and emerging countries. Consider Pakistan's current classification as a frontier market participant (recently downgraded from an emerging market participant).4 Investors willing to take on higher levels of risk may want to consider the higher growth potential of smaller yet-to-be-fully established markets such as Pakistan.
+
+Tangibility
+
+Financial instruments such as stocks and bonds are intangible investments; they can not be physically touched or felt. On the other hand, tangible investments such as land, real estate, farmland, precious metals, or commodities can be touched and have real-world applications. These real assets have different investment profiles as they can be consumed, rented, developed, or treated differently than intangible or digital assets.
+
+There are also unique risks specific to tangible assets. Real property can be vandalized, physically stolen, damaged by natural conditions, or become obsolete. Real assets may also require storage, insurance, or security costs to carry. Though the revenue stream differs from financial instruments, the input costs to protect tangible assets are also different.
+
+Diversification Across Platforms
+
+Regardless of how an investor considers building their portfolio, another aspect of diversification relates to how those assets are held. Though this is not an implication of the investment's risk, it is an additional risk worth considering as it may be diversifiable.
+
+For example, consider an individual with $400,000 of U.S. currency. In all three of the situations below, the investor has the same asset allocation. However, their risk profile is different:
+
+The individual may deposit $200,000 at one bank and $200,000 at a second bank. Both deposits are under the FDIC insurance limit per bank and are fully insured.
+The individual may deposit $400,000 at a single bank. Only a portion of the deposit is covered by insurance. In addition, should that single bank experience a bank run, the individual may not have immediate access to cash.
+The individual may physically store $400,000 of cash in their home. Though immediately accessible, the individual will not yield any interest or growth on their cash. In addition, the individual may lose capital in the event of theft, fire, or by misplacing it.
+The same concept above relates to almost every asset class. For example, Celsius Network filed for bankruptcy in July 2022.5 Investors holding cryptocurrency with the exchange experienced the inability to withdraw or transfer funds. Had investors diversified across platforms, the risk of loss would have been spread across different exchanges.
+
+Fast Fact
+
+Consider different strategies to offset technology risk and physical risk. For example, owning physical gold bars and gold ETFs diversifies your portfolio across various risks. If your physical holdings were to be stolen, at least 100% of your gold ownership was not lost.
+
+Diversification and Retail Investors
+
+Time and budget constraints can make it difficult for noninstitutional investors—i.e., individuals—to create an adequately diversified portfolio. This challenge is a key to why mutual funds are so popular with retail investors. Buying shares in a mutual fund offers an inexpensive way to diversify investments.
+
+While mutual funds provide diversification across various asset classes, exchange-traded funds (ETFs) afford investor access to narrow markets, such as commodities and international plays, that would ordinarily be difficult to access. An individual with a $100,000 portfolio can spread the investment among ETFs with no overlap.
+
+There are several reasons why this is advantageous to investors. First, it may be too costly for retail investors to buy securities using different market orders. In addition, investors must then track their portfolio's weight to ensure proper diversification. Though an investor sacrifices a say in all of the underlying companies being invested in, they simply choose an easier investment approach that prioritizes minimizing risk.
+
+Pros and Cons of Diversification
+
+The primary purpose of diversification is to mitigate risk. By spreading your investment across different asset classes, industries, or maturities, you are less likely to experience market shocks that impact every single one of your investments the same.
+
+There are other benefits to be had as well. Some investors may find diversification makes investing more fun as it encourages exploring different unique investments. Diversification may also increase the chance of hitting positive news. Instead of hoping for favorable news specific to one company, positive news impacting one of dozens of companies may benefit your portfolio.
+
+However, there are drawbacks to diversification. The more holdings a portfolio has, the more time-consuming it can be to manage—and the more expensive, since buying and selling many different holdings incurs more transaction fees and brokerage commissions. More fundamentally, diversification's spreading-out strategy works both ways, lessening the risk and the reward.
+
+For instance, imagine you've invested $120,000 equally among six stocks, and one stock doubles in value. Your original $20,000 stake is now worth $40,000. You've made a lot, sure, but not as much as if your entire $120,000 had been invested in that one company. By protecting you on the downside, diversification limits you on the upside—at least in the short term.
+
+Pros
+
+Reduces portfolio risk
+
+Hedges against market volatility
+
+Offers potentially higher returns long-term
+
+May be more enjoyable for investors to research new investments
+
+Cons
+
+Limits gains short-term
+
+Time-consuming to manage
+
+Incurs more transaction fees, commissions
+
+May be overwhelming for newer, unexperienced investors
+
+Diversifiable vs. Non-Diversifiable Risk
+
+The idea behind diversification is to minimize (or even eliminate) risk within a portfolio. However, there are certain types of risks you can diversify away, and certain types of risks exist regardless of how you diversify. These types of risks are called unsystematic and systematic risks.
+
+Consider the impact of COVID-19. Due to the global health crisis, many businesses stopped operating. Employees across many industries were laid off, and consumer spending across all sectors declined. On one hand, the economic slowdown negatively impacted almost every sector. On the other, nearly every sector then benefited from government intervention and monetary stimulus. The impact of COVID-19 on financial markets was systematic.
+
+In general, diversification aims to reduce unsystematic risk. These are the risks specific to an investment that are unique to that holding. Examples of diversifiable, non-systematic risks include:
+
+Business risk: The risk related to a specific company based on the nature of its company and what it does in the market.
+Financial risk: The risks related to a specific company or organization's financial health, liquidity, and long-term solvency.
+Operational risk: The risk related to breakdowns in manufacturing or goods distribution processes.
+Regulatory risk: The risk that legislation may adversely impact the asset.
+Through diversification, investors strive to reduce the risks above, which are controllable based on the investments held.
+
+Measuring Diversification
+
+It can become complex and cumbersome to measure how diversified a portfolio is. In reality, it is impossible to calculate the actual degree of diversification; there are simply too many variables to consider across too many assets to truly quantify a single measure of diversification. Still, analysts and portfolio managers use several measurements to get a rough idea of how diversified a portfolio is.
+
+Correlation Coefficient
+
+A correlation coefficient is a statistical measurement that compares the relationship between two variables. This statistical calculation tracks the movement of two assets and whether the assets tend to move in the same direction. The correlation coefficient result varies from -1 to 1, with interpretations ranging from:
+
+Closer to -1: There is strong diversification between the two assets, as the investments move in opposite directions. There is a strong negative correlation between the two variables being analyzed.
+Closer to 0: There is moderate diversification between the two assets, as the investments have no correlation. The assets sometimes move together, while other times, they don't.
+Closer to 1: There is a strong lack of diversification between the two assets, as the investments move in the same direction. There is a strong positive correlation between the two variables being analyzed.
+Standard Deviation
+
+Standard deviation (SD) measures how often and far an outcome occurs away from the mean. For investments, standard deviation measures how far away from an asset's average return other returns fall. Analysts use SD to estimate risk based on return frequency.
+
+For example, imagine two investments, each with an average annual return of 5%. One has a high standard deviation, which means the investment returns can vary greatly. The other investment has a low standard deviation, meaning its returns have been closer to 5%. The higher the standard deviation, the more risk there is—but there is a chance for higher returns.
+
+A portfolio full of investments with high standard deviations may have higher earning potential. However, these assets may be more likely to experience similar risks across asset classes.
+
+Smart Beta
+
+Smart beta strategies offer diversification by tracking underlying indices but do not necessarily weigh stocks according to their market cap. ETF managers further screen equity issues on fundamentals and rebalance portfolios according to objective analysis, not just company size. While smart beta portfolios are unmanaged, the primary goal becomes the outperformance of the index itself.
+
+Count/Weighting
+
+In its most basic form, a portfolio's diversification can be measured by counting the number of assets or determining the weight of each asset. When counting the number of assets, consider the number of each type for the strategies above. For example, an investor can count that of the 20 equities they hold, 15 are in the technology sector.
+
+Alternatively, investors can measure diversification by allocating percentages to what they are invested in. So, in this view, the investor with 15 equities in tech has 75% of their equity holdings in a single industry.
+
+On a broader portfolio basis, investors more often compare equity, bonds, and alternative assets to create their diversification targets. For example, traditional portfolios tended to skew towards 60% equities and 40% bonds—though some strategies call for different diversification based on age. Other theories claim that holding alternative assets has added benefits (for example, 60% equities, 20% bonds, and 20% alternatives).
+
+Example of Diversification
+
+Imagine an aggressive investor, who can assume a higher risk level, wishes to construct a portfolio composed of Japanese equities, Australian bonds, and cotton futures. They could purchase stakes in the iShares MSCI Japan ETF, the Vanguard Australian Government Bond Index ETF, and the iPath Bloomberg Cotton Subindex Total Return ETN.
+
+With this mix of ETF shares, due to the specific qualities of the targeted asset classes and the transparency of the holdings, the investor ensures true diversification in their holdings. Also, with different correlations, or responses to outside forces, among the securities, they can slightly lessen their risk exposure.
+
+What Are the Benefits of Diversification?
+
+In theory, holding investments that are different from each other reduces the overall risk of the assets you're invested in. If something bad happens to one investment, you're more likely to have assets that are not impacted if you were diversified. Diversification may result in a larger profit if you are extended into asset classes you wouldn't otherwise have invested in. Also, some investors find diversification more enjoyable to pursue as they research new companies, explore different asset classes, and own different types of investments.
+
+What Are the Methods of Diversification?
+
+There are many different ways to diversify; the primary method of diversification is to buy different types of asset classes. For example, instead of putting your entire portfolio into public stock, you may consider buying some bonds to offset some market risk of stocks.
+
+In addition to investing in different asset classes, you can diversify into different industries, geographical locations, term lengths, or market caps. The primary goal of diversification is to invest in a broad range of assets that face different risks.
+
+Is Diversification a Good Strategy?
+
+For investors seeking to minimize risk, diversification is a strong strategy. That said, diversification may minimize returns, as the goal of diversification is to reduce the risk within a portfolio. By reducing risk, an investor is willing to take less profit in exchange for the preservation of capital.
+
+The Bottom Line
+
+Diversification is a very important concept in financial planning and investment management. It is the idea that by investing in different things, the overall risk of your portfolio is lower.
+
+Instead of putting all your money into a single asset, spreading your wealth across different assets puts you at less risk of losing capital. With the ease of transacting and investing online, it is now incredibly easy to diversify your portfolio through different asset classes and other strategies.

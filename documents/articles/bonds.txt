@@ -1,0 +1,97 @@
+Title: Bonds
+Source: Investopedia
+URL: https://www.investopedia.com/terms/b/bond.asp
+Summary: The article describes bonds as fixed-income investments that provide a steady stream of income through interest payments. Bonds are issued by governments, corporations, and other entities to raise capital for various projects and operations. The article also explains the concept of yield to maturity (YTM), which measures the total return expected from a bond if held until maturity.
+
+A bond is a fixed-income investment issued by governments or corporations to raise funding.
+
+Key Takeaways
+
+A bond is a fixed-income instrument that pays a fixed interest rate or coupon to its holders. It can often be purchased through leading brokerage platforms.
+Bond prices are inversely correlated with interest rates: when rates go up, bond prices fall, and vice versa.
+Bonds are sold with maturity dates, which are the dates by which the principal amount must be paid back in full or risk default.
+What Is a Bond?
+
+A bond, which is offered by most brokerage platforms, is a fixed-income investment product where individuals lend money to a government or company at a specified interest rate for a predetermined period. The entity repays individuals with interest in addition to the original face value of the bond.
+
+Bonds are used by companies, municipalities, states, and sovereign governments to finance projects and operations. Owners of bonds are debtholders, or creditors, of the issuer. Bond details include the end date when the principal of the loan is due to be paid to the bond owner and usually include the terms for variable or fixed interest payments made by the borrower.
+
+
+How Bonds Work
+
+Bonds are debt instruments and represent loans made to the issuer. Bonds allow individual investors to assume the role of the lender. Governments and corporations commonly use bonds to borrow money to fund roads, schools, dams, or other infrastructure projects. Corporations often borrow to grow their business, buy property and equipment, undertake profitable projects, for research and development, or hire employees.
+
+Bonds are fixed-income securities and are one of the main asset classes for individual investors, along with equities and cash equivalents. The borrower issues a bond that includes the loan terms, interest payments that will be made, and the maturity date by which the bond principal must be repaid. The interest payment is part of the return that bondholders earn for loaning money to the issuer. The interest rate that determines the payment is the coupon rate.
+
+
+
+The initial price of most bonds is typically the par value, or the face value of a bond. The actual market price depends on the issuer's credit quality, the time until expiration, and the coupon rate compared to the general interest rate environment. The face value of the bond is what is paid to the lender upon maturity.1
+
+Fast Fact
+
+Markets allow lenders to buy or sell their bonds to other investors long after the original issuing organization raised capital. A bond investor does not have to hold a bond through to its maturity date.
+
+Characteristics of Bonds
+
+Face value or Par Value: The value of the bond at maturity and the reference amount the bond issuer uses when calculating interest payments.
+Coupon Rate: The rate of interest the bond issuer will pay on the face value of the bond, expressed as a percentage.
+Coupon Dates: The dates on which the bond issuer will make interest payments.
+Maturity Date: The date on which the bond will mature and the bond issuer will pay the bondholder the face value of the bond.
+Issue Price: The price at which the bond issuer originally sells the bonds. In many cases, bonds are issued at par.
+Bond Categories
+
+There are four primary categories of bonds sold in the markets. However, you may also see foreign bonds issued by global corporations and governments on some platforms.
+
+Corporate Bonds: Companies issue corporate bonds rather than seek bank loans for debt financing because bond markets offer more favorable terms and lower interest rates.
+Municipal Bonds: Issued by states and municipalities. Some municipal bonds offer investors tax-free coupon income.2
+Government Bonds: The U.S. Treasury issues several types of bonds. Those with a year or less to maturity are bills, while notes have one to 10 years until maturity. Government bonds issued with more than 10 years to maturity are called “bonds.” All bonds issued by the treasury are collectively referred to as "Treasuries."3
+Agency Bonds: Issued by government-affiliated organizations such as Fannie Mae or Freddie Mac.
+Bond Prices and Interest Rates
+
+A bond's price changes daily, where supply and demand determine that observed price. If an investor holds a bond to maturity, they will get their principal back plus interest. However, a bondholder can sell their bonds in the open market, where the price can fluctuate. A bond’s price varies inversely with interest rates. When rates go up, bond prices fall to equalize the interest rate on the bond with prevailing rates, and vice versa.1
+
+The issuer of a fixed-rate bond promises to pay a coupon based on the face value of the bond. For a $1,000 par, 10% annual coupon bond, the issuer will pay the bondholder $100 each year. If prevailing market interest rates are also 10% when this bond is issued, an investor would be indifferent to investing in the corporate or government bonds since both would return $100. However, if interest rates drop to 5%, the investor can only receive $50 from the government bond but would still receive $100 from the corporate bond.
+
+Investors bid up to the price of the bond until it trades at a premium that equalizes the prevailing interest rate environment—in this case, the bond will trade at $2,000 so that the $100 coupon represents 5%. Likewise, if interest rates soared to 15%, then an investor could make $150 from the government bond and would not pay $1,000 to earn just $100. This bond would be sold until it reached a price that equalized the yields, in this case, to a price of $666.67.
+
+Yield-to-Maturity (YTM)
+
+The yield-to-maturity (YTM) is the total return anticipated on a bond if it is held until the end of its lifetime. YTM is considered a long-term bond yield but is expressed as an annual rate.
+
+YTM is the internal rate of return of an investment in a bond if the investor holds the bond until maturity and if all payments are made as scheduled. YTM evaluates the attractiveness of one bond relative to other bonds of different coupons and maturity in the market. The formula for YTM involves solving for the interest rate.4
+
+Yield to Maturity Formula
+YTM.
+Investopedia
+Investors can measure the anticipated changes in bond prices given a change in interest rates with the duration of a bond. Duration represents the price change in a bond given a 1% change in interest rates. This practical definition is the modified duration of a bond. Bonds with long maturities, as well as bonds with low coupons, have the greatest sensitivity to interest rate changes.
+
+How to Invest in Bonds
+
+While there are some specialized bond brokers, most online and discount brokers offer access to bond markets, and investors can buy them like stocks. Treasury bonds and Treasury Inflation Protected Securities are typically sold directly via the federal government and can be purchased via its TreasuryDirect website.5 Investors can also buy bonds indirectly via fixed-income ETFs or mutual funds that invest in a portfolio of bonds. Investors can also take a look at Investopedia's list of the best online stock brokers.
+
+Diagram explaining the advantages and disadvantages of bonds including points like returns and risks by Investopedia.
+Image by Sabrina Jiang Â© Investopedia 2020
+Bond Variations
+
+
+The bonds available for investors come in many different varieties, depending on the rate or type of interest or coupon payment, being recalled by the issuer, or because they have other attributes.
+
+Zero-Coupon Bonds (Z-bonds): Do not pay coupon payments and instead are issued at a discount to their par value that will generate a return once the bondholder is paid the full face value when the bond matures. U.S. Treasury bills are zero-coupon bonds.
+Convertible Bonds: Debt instruments with an embedded option that allows bondholders to convert their debt into stock (equity) at some point, depending on certain conditions like the share price.
+Callable Bonds: Have an embedded option, but it is different than what is found in a convertible bond. A callable bond can be “called” back by the company before it matures. A callable bond is riskier for the bond buyer because the bond is more likely to be called when it is rising in value.
+Puttable Bonds: Allow the bondholders to put or sell the bond back to the company before it has matured. This is valuable for investors who are worried that a bond may fall in value or if they think interest rates will rise, and they want to get their principal back before the bond falls in value. A puttable bond usually trades at a higher value than a bond without a put option but with the same credit rating, maturity, and coupon rate because it is more valuable to the bondholders.
+What Determines a Bond's Coupon Rate?
+
+Two features of a bond—credit quality and time to maturity—are the principal determinants of a bond's coupon rate. If the issuer has a poor credit rating, the risk of default is greater, and these bonds pay more interest. Bonds that have a very long maturity date also usually pay a higher interest rate. This higher compensation is because the bondholder is more exposed to interest rate and inflation risks for an extended period.
+
+How Are Bond's Rated?
+
+A company's and its bonds' credit ratings are generated by credit rating agencies like Standard and Poor’s, Moody’s, and Fitch Ratings. The highest quality bonds are called “investment grade” and include debt issued by the U.S. government and very stable companies, such as utilities. Bonds that are not considered investment grade but are not in default are called “high yield” or “junk” bonds. These bonds have a higher risk of default in the future, and investors demand a higher coupon payment to compensate them for that risk.6
+
+What Is Duration?
+
+Bonds and bond portfolios will rise or fall in value as interest rates change. The sensitivity to changes in the interest rate environment is called “duration.” The use of the term duration in this context can be confusing to new bond investors because it does not refer to the length of time the bond has before maturity. Instead, duration describes how much a bond’s price will rise or fall with a change in interest rates.
+
+The Bottom Line
+
+Bonds are issued by companies and governments to finance projects and fund operations. A bond is considered a fixed-income instrument since bonds traditionally pay a fixed interest rate to bondholders. Investors can purchase corporate bonds through financial institutions or online brokers, or buy government bonds through the U.S. Treasury website.

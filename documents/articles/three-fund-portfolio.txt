@@ -1,0 +1,194 @@
+Title: Three-fund portfolio
+Source: Bogleheads
+URL: https://www.bogleheads.org/wiki/Three-fund_portfolio
+
+
+Three-fund portfolio
+A three-fund portfolio is a portfolio which uses only basic asset classes — usually a domestic stock "total market" index fund, an international stock "total market" index fund and a bond "total market" index fund. It is often recommended for and by Bogleheads attracted by "the majesty of simplicity" (John Bogle's phrase), and for those who want finer control and better tax-efficiency than they would get in an all-in-one fund like a target retirement fund.
+
+There is no magic in the number three. The phrase is shorthand for a style of portfolio construction that emphasizes simplicity, and is related to lazy portfolios.
+
+Establishing a three-fund portfolio
+
+A three-fund portfolio is based on the fundamental asset classes, stocks and bonds. It is assumed that cash is not counted within the investment portfolio, so it is not included. On the other hand, it is assumed that every investor should hold both domestic and international stocks. The task, then, is to take these three basic non-cash assets — domestic stocks, international stocks, and bonds — decide how much of each to hold (your asset allocation). Choose where to hold each of these asset classes, and finally choose a mutual fund to use for each asset class.
+
+Choosing your asset allocation
+
+Main article: Asset allocation
+You must decide for yourself what percentage of stocks to hold, based in part on your personal risk tolerance. There are no shortcuts and and it needs to be done no matter what investment approach you are using.
+
+Even if you are going to use a single Target Retirement fund, you should not take the shortcut implied by the use of a retirement year in the name; you need to decide for yourself what percentage of your portfolio you want to invest in stocks, and choose the fund that matches it. Even if you are going to use a single LifeStrategy fund, you need to decide which of them to use, based on the percentage of stocks each you hold.
+
+One traditional rough rule-of-thumb is "age in bonds," or percentage of stocks = 100 - age. This is a conservative rule, and leads to smaller percentages of stocks than Vanguard chooses for its Target Retirement series.
+
+The second decision is what percentage of your stock allocation should be U.S. (domestic) and what should be international. This is a much less critical decision because U.S. and international stocks have similar risk profiles and have similar long-term returns. In 2010, Vanguard increased the international allocation of its Target Retirement and LifeStrategy funds from 20% of the stock allocation to 30%, and increased it again to 40% in 2015.
+
+Choosing your asset location
+
+Since your portfolio may be split between multiple locations (one or more tax-advantaged retirement accounts, and one or more taxable accounts) you should look at tax-efficient fund placement to determine which funds belong in each account. In general, the international fund should go into a taxable account, the bond fund should go into a tax-advantaged account, and the domestic equity fund should fill in the remaining space.
+
+You may need to hold the same (or equivalent) funds in multiple accounts to have ideal asset allocation and asset location.
+
+Choosing three funds
+
+For Bogleheads, the answer for "which mutual funds" to use in a three-fund portfolio is "low-cost funds that represent entire markets."
+
+If you ask different people to choose funds for a three-fund portfolio, you will get different fund choices. The differences are usually of no fundamental importance, and are usually the result of a) making choices between nearly identical, almost interchangeable funds, and b) simplifying further by using combination package funds. Watch out for high expense ratios, particularly in the bond funds.
+
+Vanguard funds
+
+From Vanguard's list of "core funds," the funds that are best for a three-fund portfolio are:
+
+Vanguard Total Stock Market Index Fund (VTSAX)
+Vanguard Total International Stock Index Fund (VTIAX)
+Vanguard Total Bond Market Fund (VBTLX)
+So, a "three-fund portfolio" might consist of 42% Total Stock Market Index, 18% Total International Stock Index, and 40% Total Bond Market fund. For example, Taylor Larimore's "Lazy Portfolio" consists of these three funds based on the investor's desired asset allocation.
+
+Of course, you could use ETFs rather than mutual funds. For example, you could use Total Stock Market ETF (VTI),[note 1] Vanguard Total International Stock Index Fund (VXUS)[note 2] for international, and Vanguard Total Bond Market ETF (BND).
+
+Sample three-fund portfolios
+64/16/20 allocation
+
+48/12/40 allocation
+
+34/33/33 allocation
+
+32/8/60 allocation
+
+14/6/80 allocation
+
+Other than Vanguard, Boglehead-style
+
+The building blocks of Boglehead-style investing are low-expense-ratio index mutual funds and/or ETFs. Vanguard fans would suggest that Vanguard has the best and most complete lineup of such funds, and that the most convenient place to hold Vanguard mutual funds is directly at Vanguard. As a result, the Bogleheads forum and Wiki tends to be Vanguard-oriented. But investing according to the Boglehead philosophy certainly does not require you to invest at Vanguard or use Vanguard products. Here are some suggestions on how to do it with other funds. (Refer to the associated wiki article for additional information.)
+
+Some brokerages such as Merrill Edge do not offer their own family of mutual funds so you will to consider different fund families. First ask your brokerage which mutual funds have no transaction fees. You typically will choose between two options: a) the lowest cost funds like Vanguard's but with a transaction fee, or b) higher cost funds like T. Rowe Price's but with no transaction fee. The best choice depends on how often you buy or sell and how much you invest over time.
+
+Three-fund portfolios using mutual funds
+Fund provider	Example portfolios
+Charles Schwab	With Schwab, investors can construct a three-fund portfolio using:[note 3]
+Schwab Total Stock Market Index (SWTSX)
+Schwab International Index (SWISX)
+Schwab U.S. Aggregate Bond Index Fund (SWAGX)
+Dreyfus	When using Dreyfus index funds, investors can build a three-fund portfolio using:[note 4]
+S&P 500 Basic Index (DSPIX)
+International Index (DIPSX)
+Bond Index Basic (DBIRX)
+Fidelity	With Fidelity, for example, you could construct a three-fund portfolio using:
+Fidelity ZERO Total Market Index Fund (FZROX)[note 5] or Fidelity Total Market Index Fund (FSKAX)
+Fidelity ZERO International Index Fund (FZILX)[note 5][note 6] or Fidelity Total International Index Fund (FTIHX)
+Fidelity U.S. Bond Index Fund (FXNAX)
+Northern Funds	When investing in Northern Funds investors can create a three-fund portfolio using:[note 7]
+Stock Index (NOSIX)
+International Index (NOINX)
+Bond Index (NOBOX)
+T. Rowe Price	T. Rowe Price investors can create a simple indexed three-fund portfolio using the following three funds:[note 8]
+Total Equity Market Index Fund (POMIX)
+International Equity Index Fund (PIEQX)
+US Bond Enhanced Index Fund (PBDIX)
+Thrift Savings Plan	Participants of the Thrift Savings Plan can create a three-fund portfolio using the following three funds, for example:[note 9]
+C fund
+I fund
+F Fund, or alternately, the G Fund
+TIAA	TIAA annuities plans participants can create a three-fund portfolio with only two funds:[note 10]
+CREF Stock (70% Russell 3000 / 30% MSCI Allworld ex-US)
+CREF Bond (Bloomberg U.S. Aggregate Bond)[note 11]
+TIAA mutual fund (retail) participants can use:[note 12]
+
+Equity Index (TINRX)
+Emerging Markets Stock Index (TEQKX)
+Bond Index Fund (TBILX)
+Three-fund portfolios using exchange-traded funds
+Fund provider	Example portfolios
+BlackRock iShares	When using iShares ETFs, investors can build a three-fund portfolio using:
+iShares Core S&P Total Market ETF (ITOT)
+iShares Core MSCI Total International Stock ETF (IXUS)
+iShares Core U.S. Aggregate Bond ETF (AGG) or iShares Core Total USD Bond Market ETF (IUSB)
+Charles Schwab	With Schwab, investors can construct a three-fund portfolio using:[note 13]
+US Broad Market ETF (SCHB)
+International Equity Index ETF (SCHF)
+U.S. Aggregate Bond Index ETF (SCHZ)
+State Street SPDRs	When using SPDRs, investors can build a three-fund portfolio using:[note 14]
+SPDR Portfolio S&P 1500® Composite Stock Market ETF (SPTM)
+SPDR Portfolio Developed World ex-US ETF (SPDW)
+Portfolio Aggregate Bond ETF (SPAB)
+Vanguard	When investing in Vanguard ETFs, investors can create a three-fund portfolio using:[note 15]
+Vanguard Total Stock ETF (VTI)
+Vanguard Total International Stock ETF (VXUS)
+Vanguard Total Bond Market ETF (BND)
+Other considerations
+
+A total stock market index fund represents the whole market, while an S&P 500 fund does not. Now that total stock market funds exist and have expenses just as low as S&P 500 funds, total stock market funds are preferable. In practice, the importance and magnitude of the difference is a subject of debate. In a 401(k) plan with limited choices you might very well opt for an S&P 500 index fund to serve as the domestic stock component of a three-fund portfolio.
+
+Alternatively, you can approximate a Total Stock Market fund by combining an S&P 500 index fund with one or more mid-cap and small-cap funds. There are "completion index" funds such as Vanguard's Extended Market fund (available as an open-end fund as VEXAX and as an ETF as VXF) which can be added to an S&P 500 fund in a specified ratio to produce a hybrid which should perform like a Total Stock Market fund.
+
+Vanguard perplexes investors by offering two virtually interchangeable international stock market index funds: Vanguard Total International Stock Index Fund (VTIAX) and Vanguard FTSE All-World ex-US (VFWAX). See Should I buy Total International or FTSE All-World ex-US for the details.
+
+For Vanguard, be aware of any minimum investment required by each fund; for instance, the Admiral shares of most Vanguard index funds require a minimum investment of $3,000. If you will have difficulty meeting these minimums, you may want to consider an all-in-one single-fund portfolio until you accumulate enough that this is not an issue.
+
+The Vanguard Total Bond Market Index Fund, and those of several other firms, track the Barclay's U.S. Aggregate Index (in Vanguard's case, the Barclay's U.S. Aggregate Float-Adjusted Index). In Barclay's words, this index tracks the "investment grade, US dollar-denominated, fixed-rate taxable bond market." The "bond market" is a somewhat diffuse concept. Some people complain that the Aggregate index is not really the "total" bond market. Barclay's has a broader index, the Barclay's U.S. Universal Index. It includes "USD-denominated, taxable bonds that are rated either investment grade or high-yield." As of 2015, 87% of the Universal index is made up of bonds in the Aggregate index, but the other 13% includes "U.S. Corporate High Yield Index, Investment Grade 144A Index, Eurodollar Index, U.S. Emerging Markets Index, and the non-ERISA eligible portion of the CMBS Index." People who have strong feelings about wanting to be more "total" than the Vanguard Total Bond Index Fund might prefer the Barclay's Universal index. As of 2015, there is at least one product, the iShares Core Total USD Bond Market ETF, IUSB, that tracks the Barclay's Universal index, and with an 0.13% expense ratio, it qualifies as a "low-cost index fund." It could be used as the bond component of a three-fund portfolio.
+
+Combining domestic and international stocks
+
+The relative percentage of domestic and international stocks is a subject of intense discussion in the forum. One sensible option is to hold domestic and international stocks in the same proportions as they represent in the total world economy. As of October 2014, that would be about 50% U.S. and 50% international. This option is recommended by Burton Malkiel and Charles Ellis, both of whom have longstanding ties to Vanguard, in their book The Elements of Investing. Other authorities suggest holding less than that, and Vanguard currently allocates 40% of stock to international in its Target Retirement funds, and in their research, advise holding 20-40% international allocations.[2] If your own preference is for a "total world" weighting, then the portfolio can obviously be simplified using Vanguard's Total World Stock Index fund, which is exactly what Malkiel and Ellis suggest. Such a two-fund portfolio would use these funds:
+
+Vanguard Total World Stock Index Fund (VTWSX) for both domestic and international stocks
+Vanguard Total Bond Market Index Fund (VBTLX)
+Combining stocks and bonds
+
+The Vanguard Balanced Index Fund holds 60% Total Stock Market Index Fund and 40% Total Bond Market Index Fund. By adding an international stock fund, you could create a three-fund portfolio with two funds.
+
+Adequacy of a three-fund portfolio
+
+One Marketwatch article[3] quotes various non-Boglehead commentators as saying such things as "You can make it really simple, be well-diversified, and do better than two-thirds of investors" and "That three-pronged approach is going to beat the vast majority of the individual stock and bond portfolios that most people have at brokerage firms... there is a certain elegance in the simplicity of it."
+
+In her Forbes article, "How To Diversify With Just Three Funds", Boglehead Laura F. Dogu describes this approach and comments "With only these three funds (Vanguard Total Stock Market Index fund, Vanguard Total International Stock Market Index fund, and the Vanguard Total Bond Market fund), investors can create a low cost, broadly diversified portfolio that is very easy to manage and rebalance.... Some investors may be uncomfortable with holding only three funds and will question whether they are truly diversified. With these three holdings the answer on diversification is a resounding 'YES'."[4]
+
+In a 2015 article, "The only funds you need in your portfolio now", Walter Updegrave commented: "Of course, some advisers will suggest that you're missing out unless you spread your money among all manner of exotic investments (which they're more than happy to sell you). But the more complicated your portfolio is, the more expensive and more prone to blow-ups it is likely to be -- which also increases the odds that it will generate subpar returns," and suggested a "three-fund diversified portfolio: simply invest in the following three funds (or their ETF equivalents): a total U.S. stock market fund, a total international stock market fund and a total U.S bond market fund."[5]
+
+Some would argue that a three-fund portfolio is good enough and that there is no real proof that more complicated portfolios are any better. Others would argue that the evidence for superiority of slice and dice, "small value tilting," and inclusion of classes like REITs is too strong to ignore.
+
+What about bonds?
+
+As of 2016 when this is being written, bond interest rates are near historic lows and there is a good deal of buzz to the effect that the "thirty-year bull market in bonds has ended" and that investing strategies that have worked for decades should be changed to reflect new realities. Should the three-fund portfolio be modified? No definitive answer can be given to this controversial question, but we can sketch out some of the prevalent and conflicting opinions on the matter.
+
+Some would say that advocates of complex investing strategies always have reasons why simple approaches "once worked but do not work any more." Advocates of simplicity might say to ignore the noise and continue to stay the course; it may turn out that something else does better--something always does--but that a three-fund portfolio is still good enough.
+In 2013, Vanguard altered the composition of its Target Retirement funds; from 2010 to 2013, most of them were literally three-fund portfolios as described here. Now, the bond portion has been modified to include international bonds; specifically, the bond allocation is now 70% Vanguard Total Bond Market Index Fund and 30% Total International Bond Index Fund. Nothing Vanguard has published would lead you to believe that this is a big change or that it will have a big effect. Some may find it appealing to follow Vanguard's lead.
+Some well-informed Bogleheads make a strong case that the "bond" component of a three-fund portfolio might well be filled with non-brokered bank CDs instead of a traditional bond fund.
+Suggestions 2 and 3 are adjustments that do not radically change the risk of the bond component. For the record, it should be stated that Burton Malkiel and Charles Ellis, in the 2013 edition of their book Elements of Investing, made a controversial and much more radical suggestion, which shocked many forum members. But, because they were early champions of indexing, each with long associations with Vanguard, their suggestion should be noted. They seemed to be recommending the replacement of a traditional high-grade bond fund with a 50/50 mix of emerging markets bonds and a high-dividend stock fund. Using Vanguard's "risk potential" categories, that means they are recommending replacing a holding in risk potential category 2 with a mix of holdings in categories 3 and 4.
+Following the resurgence of inflation in 2021, Treasury Inflation Protected Securities (TIPS) have now become more popular.[6]
+
+Contrasts with other approaches
+
+There are single, all-in-one, "funds of funds" that are intended to be used as an investor's whole portfolio. Vanguard funds in this category include the Target Retirement funds, the LifeStrategy funds; perhaps the actively-managed Wellington and Wellesley funds would qualify, too.
+
+On the one hand, a three-fund portfolio involves a do-it-yourself aspect that makes it more complicated than using an all-in-one fund. For example, because different assets grow at different rates, any investor who chooses a do-it-yourself approach needs to "rebalance" occasionally — perhaps annually — to maintain the desired percentage mix.
+
+On the other hand, three-fund portfolios are simpler than the genres called "Coffeehouse portfolios" (William Schultheis's term), "couch potato" portfolios, or "lazy portfolios," which are intended to be easy for do-it-yourselfers but are nevertheless slice-and-dice portfolios using six or more funds.
+
+The LifeStrategy and Target Retirement funds are four-fund portfolios
+
+Main article: Vanguard four fund portfolio
+The Vanguard Target Retirement funds and LifeStrategy funds use a four fund allocation.[note 16] The funds include:
+
+Vanguard Total Stock Market Index Fund
+Vanguard Total International Stock Index Fund
+Vanguard Total Bond Market II Index Fund
+Vanguard Total International Bond Index Fund
+Some see advantages in holding a do-it-yourself four-fund portfolio rather than a LifeStrategy fund or Target Retirement fund, even if the same four funds are used. The advantages are small but meaningful to some, and include:
+
+Improved tax efficiency for taxable investors by placing each fund in its best location
+Direct control over allocation percentages
+Independence from Vanguard's small course changes in the Target Retirement funds (as when they increased stock allocation in 2006, and changed domestic-to-international ratio in 2010, and added international bonds in 2013)
+Availability of slightly-lower-cost Admiral shares in the individual funds, but not the Target Retirement or LifeStrategy funds
+Lazy portfolios
+
+Main article: Lazy portfolios
+Lazy portfolios are specific portfolio suggestions, designed to perform well in most market conditions. Most contain a small number of low-cost funds that are easy to rebalance. They are "lazy" in that the investor can maintain the same asset allocation for an extended period of time, as they generally contain 30-40% bonds, suitable for most pre-retirement investors.
+
+The term has been popularized by Paul B. Farrell, who writes MarketWatch columns about various simple portfolios. Instead of going through the step of deciding on your own asset allocation, you accept the suggestion that, say, 2/3 stocks to 1/3 bonds and half-and-half domestic and international is a good enough, one-size-fits-all allocation.
+
+Other variations
+
+See also: Variations on Bogleheads® investing
+A three-fund combination can serve as the core of a more complex portfolio, where you add a small play money allocation or a tilt to some corner of the market that interests you.
+

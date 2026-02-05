@@ -5,9 +5,10 @@ def main():
     questions = [
         "What is an ETF?",
         "Explain diversification like I’m 12.",
-        "What’s the difference between a stock and a bond?"
+        "What is crypto staking?"
     ]
     for q in questions:
+        print("=" * 80)
         print(f"Question: {q}")
         response = agent.run(q)
         print(f"Agent Name: {response.agent_name}\n")
