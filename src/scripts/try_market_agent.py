@@ -17,7 +17,7 @@ def main() -> None:
 
     for sample in samples:
         response = agent.run(sample)
-        print(f"Input: {sample} -> {response.answer}")
+        print(f"Input: {sample} -> {response.answer} {response.sources}")
 
 
 if __name__ == "__main__":
