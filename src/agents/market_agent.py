@@ -15,6 +15,10 @@ import yfinance as yf
 from src.agents.base import AgentResponse
 from src.utils.cache import TTLCache
 
+DISCLAIMER = (
+    "Educational only — not financial advice. Market data may be delayed or incomplete."
+)
+
 
 class MarketAnalysisAgent:
     """Lightweight market lookup agent with a TTL cache."""
@@ -51,7 +55,7 @@ class MarketAnalysisAgent:
 
         if not ticker:
             return AgentResponse(
-                answer="I couldn't spot a ticker symbol in your message.",
+                answer=self._with_disclaimer("I couldn't spot a ticker symbol in your message."),
                 agent_name=self.name,
                 confidence="low",
                 sources=[],
@@ -62,7 +66,7 @@ class MarketAnalysisAgent:
         if cached_data:
             formatted = self._format_answer(ticker, cached_data, cached=True)
             return AgentResponse(
-                answer=formatted,
+                answer=self._with_disclaimer(formatted),
                 agent_name=self.name,
                 confidence="high",
                 sources=["yfinance (cache)"],
@@ -73,7 +77,9 @@ class MarketAnalysisAgent:
 
         if market_data is None:
             return AgentResponse(
-                answer=f"I couldn't fetch data for {ticker} right now.",
+                answer=self._with_disclaimer(
+                    f"I couldn't fetch data for {ticker} right now."
+                ),
                 agent_name=self.name,
                 confidence="low",
                 sources=["yfinance"],
@@ -84,7 +90,7 @@ class MarketAnalysisAgent:
 
         formatted = self._format_answer(ticker, market_data)
         return AgentResponse(
-            answer=formatted,
+            answer=self._with_disclaimer(formatted),
             agent_name=self.name,
             confidence="high",
             sources=["yfinance"],
@@ -188,3 +194,8 @@ class MarketAnalysisAgent:
             parts.append("(cached)")
 
         return " | ".join(parts)
+
+    def _with_disclaimer(self, message: str) -> str:
+        if "disclaimer:" in message.lower():
+            return message
+        return f"{message}\n\nDisclaimer: {DISCLAIMER}"

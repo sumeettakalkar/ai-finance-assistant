@@ -207,8 +207,12 @@ class PortfolioAgent:
         return "\n".join(lines)
 
     def _error_response(self, message: str) -> AgentResponse:
+        answer = message
+        if "disclaimer:" not in answer.lower():
+            answer = f"{answer}\n\nDisclaimer: {DISCLAIMER}"
+
         return AgentResponse(
-            answer=message,
+            answer=answer,
             agent_name=self.name,
             confidence="low",
             sources=["self-computed"],

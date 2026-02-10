@@ -1,6 +1,7 @@
 from __future__ import annotations
 from dataclasses import dataclass, field
 from functools import lru_cache
+import re
 from typing import Any, Dict, List, Literal, Optional, Tuple
 
 from langgraph.graph import END, StateGraph
@@ -28,13 +29,23 @@ class GraphState:
 def classify_route(user_message: str) -> Route:
     """Simple keyword-based routing logic to determine which agent to use."""
     msg = user_message.lower()
+
+    # Fast path for ticker-only input (e.g., "AAPL" or "$TSLA").
+    if re.fullmatch(r"\s*\$?[A-Za-z]{1,5}\s*", user_message):
+        print("Routing to MarketAnalysisAgent")
+        return "market"
+
     if "save" in msg or "goal" in msg or "expected_annual_return" in msg or "target_amount" in msg:
+        print("Routing to GoalAgent")
         return "goal"
     elif "stock" in msg or "price" in msg or "market" in msg or "quote" in msg:
+        print("Routing to MarketAnalysisAgent")
         return "market"
     elif "portfolio" in msg or "allocation" in msg or "diversification" in msg or "{" in msg:
+        print("Routing to PortfolioAgent")
         return "portfolio"
     else:
+        print("Routing to FinanceQAAgent")
         return "finance_qa"
     
 
@@ -56,6 +67,9 @@ def _goal_agent() -> GoalAgent:
 
 def router_node(state: GraphState) -> Dict[str, Any]:
     """Node to classify the route based on user message."""
+    if state.route in ("goal", "market", "portfolio", "finance_qa"):
+        return {"route": state.route}
+
     route = classify_route(state.userMsg)
     return {"route": route}
 

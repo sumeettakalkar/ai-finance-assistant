@@ -1,3 +1,5 @@
+import os
+
 from openai import OpenAI
 from src.agents.base import AgentResponse
 from src.rag.retriever import Retriever
@@ -11,9 +13,10 @@ class FinanceQAAgent:
     
     name : str = "FinanceQA_Agent"
     
-    def __init__(self, model: str = "gpt-5"):
+    def __init__(self, model: str | None = None):
         self.client = OpenAI()
-        self.model = model
+        # Favor a low-latency default model for chat UX.
+        self.model = model or os.getenv("OPENAI_FINANCE_MODEL", "gpt-4o-mini")
         self.retriever = Retriever()
 
     def run(self, user_message: str) -> AgentResponse:
@@ -31,8 +34,9 @@ class FinanceQAAgent:
             model=self.model,
             instructions=instructions,
             input=user_message,
+            max_output_tokens=300,
         )
-        answer = resp.output_text.strip()
+        answer = self._with_disclaimer(resp.output_text.strip())
         
         return AgentResponse(
             answer=answer,
@@ -40,4 +44,8 @@ class FinanceQAAgent:
             confidence="high",
             sources=["Investopedia"],
         )
-    
+
+    def _with_disclaimer(self, message: str) -> str:
+        if "disclaimer:" in message.lower():
+            return message
+        return f"{message}\n\nDisclaimer: {DISCLAIMER}"

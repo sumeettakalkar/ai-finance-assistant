@@ -5,3 +5,5 @@ yfinance>=0.2.40
 pandas>=2.0.0
 langgraph>=0.2.0
 streamlit>=1.32.0
+pytest
+pytest-cov
