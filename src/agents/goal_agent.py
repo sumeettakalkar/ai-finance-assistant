@@ -143,7 +143,7 @@ class GoalAgent:
         }
 
     def _format_answer(self, result: Dict[str, float]) -> str:
-        """Render a compact, beginner-friendly response."""
+        """Render a structured markdown response for readability in chat UI."""
         target_amount = result["target_amount"]
         years = result["years"]
         months = int(result["months"])
@@ -151,18 +151,26 @@ class GoalAgent:
         current_savings = result["current_savings"]
         fv_of_current_savings = result["fv_of_current_savings"]
         monthly_contribution = result["monthly_contribution"]
+        disclaimer_text = " ".join(DISCLAIMER.split())
 
         lines = []
-        lines.append(f"Required monthly contribution: ${monthly_contribution:,.2f}")
-        lines.append(f"- Target amount (FV): ${target_amount:,.2f}")
-        lines.append(f"- Time horizon: {years:g} years ({months} months)")
-        lines.append(f"- Expected annual return: {annual_return_pct:.2f}%")
-        lines.append(f"- Current savings (PV): ${current_savings:,.2f}")
+        lines.append("### Goal Plan Summary")
+        lines.append("")
+        lines.append(f"**Required monthly contribution: ${monthly_contribution:,.2f}**")
+        lines.append("")
+        lines.append("**Inputs used**")
+        lines.append(f"- Target amount (FV): **${target_amount:,.2f}**")
+        lines.append(f"- Time horizon: **{years:g} years ({months} months)**")
+        lines.append(f"- Expected annual return: **{annual_return_pct:.2f}%**")
+        lines.append(f"- Current savings (PV): **${current_savings:,.2f}**")
+        lines.append("")
+        lines.append("**Projection details**")
         lines.append(
-            f"- Projected future value of current savings: ${fv_of_current_savings:,.2f}"
+            f"- Future value of current savings at this return: **${fv_of_current_savings:,.2f}**"
         )
-        lines.append("- Contribution timing: end of each month (ordinary annuity)")
-        lines.append(f"Disclaimer: {DISCLAIMER}")
+        lines.append("- Contribution timing assumed: **end of each month (ordinary annuity)**")
+        lines.append("")
+        lines.append(f"_Disclaimer: {disclaimer_text}_")
         return "\n".join(lines)
 
     def _normalize_annual_return(self, raw_rate: float) -> float | None:

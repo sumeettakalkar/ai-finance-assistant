@@ -172,7 +172,7 @@ class PortfolioAgent:
         }
 
     def _format_answer(self, metrics: Dict[str, object]) -> str:
-        """Render a short human-friendly report."""
+        """Render a structured markdown report for readability in chat UI."""
         total = metrics["total"]
         allocations: List[Tuple[str, float, float]] = metrics["allocations"]  # type: ignore
         diversification_score = metrics["diversification_score"]
@@ -191,19 +191,32 @@ class PortfolioAgent:
         else:
             reasons.append("broad mix with no single outsized position")
 
+        trigger_text = ", ".join(triggers) if triggers else "No major trigger identified"
+
         lines = []
-        lines.append(f"Total value: ${total:,.2f}")
-        lines.append("Allocations:")
+        lines.append("### Portfolio Summary")
+        lines.append("")
+        lines.append(f"**Total portfolio value:** ${total:,.2f}")
+        lines.append("")
+        lines.append("**Allocation breakdown**")
+        lines.append("")
+        lines.append("| Ticker | Weight | Value |")
+        lines.append("|---|---:|---:|")
         for ticker, weight, value in allocations:
-            lines.append(f" - {ticker}: {weight*100:.1f}% (${value:,.2f})")
-        lines.append(f"Diversification score: {diversification_score} / 100")
-        lines.append(
-            f"Risk: {risk} (reason: {', '.join(reasons)}; triggers: {', '.join(triggers)})"
-        )
-        lines.append(
-            f"- Asset mix (approx): Stocks {stock_pct:.0f}%, Bonds {bond_pct:.0f}%, Other {other_pct:.0f}%"
-        )
-        lines.append(f"Disclaimer: {DISCLAIMER}")
+            lines.append(f"| {ticker} | {weight*100:.1f}% | ${value:,.2f} |")
+        lines.append("")
+        lines.append("**Risk and diversification**")
+        lines.append(f"- Diversification score: **{diversification_score} / 100**")
+        lines.append(f"- Risk level: **{str(risk).capitalize()}**")
+        lines.append(f"- Primary reason: {', '.join(reasons)}")
+        lines.append(f"- Triggers: {trigger_text}")
+        lines.append("")
+        lines.append("**Asset mix (approx.)**")
+        lines.append(f"- Stocks: **{stock_pct:.0f}%**")
+        lines.append(f"- Bonds: **{bond_pct:.0f}%**")
+        lines.append(f"- Other: **{other_pct:.0f}%**")
+        lines.append("")
+        lines.append(f"_Disclaimer: {DISCLAIMER}_")
         return "\n".join(lines)
 
     def _error_response(self, message: str) -> AgentResponse:
