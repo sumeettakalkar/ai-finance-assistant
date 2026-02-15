@@ -27,3 +27,5 @@ Build data from
     Morningstar (some pages are gated)
 	•	Vanguard educational pages
 	•	Fidelity Learning Center
+
+	explore skills for 
