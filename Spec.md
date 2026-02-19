@@ -34,38 +34,26 @@ LangGraph Router (StateGraph)
 
 ```mermaid
 flowchart TB
-  %% =========================
-  %% AI Finance Assistant - Architecture
-  %% =========================
-
   UI[Streamlit UI\nTabs: Chat | Portfolio | Market | Goals]
   UI -->|user_message / JSON| LG[LangGraph Router\n(StateGraph)]
 
   LG -->|route: finance_qa| QA[Finance Q&A Agent]
-  LG -->|route: market| MA[Market Analysis Agent]
-  LG -->|route: portfolio| PA[Portfolio Analysis Agent]
-  LG -->|route: goal| GA[Goal Planning Agent]
+  LG -->|route: market| MA[Market Agent]
+  LG -->|route: portfolio| PA[Portfolio Agent]
+  LG -->|route: goal| GA[Goal Agent]
 
-  %% Finance Q&A (RAG)
   QA --> RET[RAG Retriever]
-  RET --> FAISS[(FAISS Vector Index)]
-  RET --> KB[(Knowledge Base\n50-100 articles + metadata)]
-  RET -->|top-k chunks + citations| QA
-  QA -->|context grounded prompt| LLM[OpenAI LLM]
-  LLM --> QA
+  RET --> FAISS[(FAISS Index)]
+  RET --> KB[(Knowledge Base)]
+  QA --> LLM[OpenAI LLM]
 
-  %% Market
-  MA --> CACHE[(TTL Cache\nin-memory)]
+  MA --> CACHE[(TTL Cache)]
   MA --> YF[yFinance API]
-  YF --> MA
-  CACHE --> MA
 
-  %% Portfolio + Goal (self-computed)
-  PA --> MATH1[Heuristics\nHHI, allocation, risk bands]
-  GA --> MATH2[Financial Math\nFV/Annuity PMT solver]
+  PA --> MATH1[Heuristic Analysis\nHHI + Allocation]
+  GA --> MATH2[Financial Math\nFV / Annuity PMT]
 
-  %% Response
-  QA --> RESP[AgentResponse\n(answer, agent_name, sources, confidence)]
+  QA --> RESP[AgentResponse]
   MA --> RESP
   PA --> RESP
   GA --> RESP
