@@ -34,26 +34,26 @@ LangGraph Router (StateGraph)
 
 ```mermaid
 flowchart TB
-  UI[Streamlit UI\nTabs: Chat | Portfolio | Market | Goals]
-  UI -->|user_message / JSON| LG[LangGraph Router\n(StateGraph)]
+  UI["Streamlit UI<br/>Tabs: Chat, Portfolio, Market, Goals"]
+  UI -->|user_message / JSON| LG["LangGraph Router<br/>(StateGraph)"]
 
-  LG -->|route: finance_qa| QA[Finance Q&A Agent]
-  LG -->|route: market| MA[Market Agent]
-  LG -->|route: portfolio| PA[Portfolio Agent]
-  LG -->|route: goal| GA[Goal Agent]
+  LG -->|finance_qa| QA["Finance Q&A Agent"]
+  LG -->|market| MA["Market Agent"]
+  LG -->|portfolio| PA["Portfolio Agent"]
+  LG -->|goal| GA["Goal Agent"]
 
-  QA --> RET[RAG Retriever]
+  QA --> RET["RAG Retriever"]
   RET --> FAISS[(FAISS Index)]
   RET --> KB[(Knowledge Base)]
-  QA --> LLM[OpenAI LLM]
+  QA --> LLM["OpenAI LLM"]
 
   MA --> CACHE[(TTL Cache)]
-  MA --> YF[yFinance API]
+  MA --> YF["yFinance API"]
 
-  PA --> MATH1[Heuristic Analysis\nHHI + Allocation]
-  GA --> MATH2[Financial Math\nFV / Annuity PMT]
+  PA --> MATH1["Heuristic Analysis<br/>HHI + Allocation"]
+  GA --> MATH2["Financial Math<br/>FV / Annuity PMT"]
 
-  QA --> RESP[AgentResponse]
+  QA --> RESP["AgentResponse"]
   MA --> RESP
   PA --> RESP
   GA --> RESP
