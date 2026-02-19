@@ -32,7 +32,7 @@ LangGraph Router (StateGraph)
       +--> Goal Agent         --> Financial Math (annuity formulas)
 
 
-
+```mermaid
 flowchart TB
   %% =========================
   %% AI Finance Assistant - Architecture
@@ -71,10 +71,10 @@ flowchart TB
   GA --> RESP
 
   RESP --> UI
-
+```
 
   Sequence diagram :
-
+```mermaid
   sequenceDiagram
   autonumber
   actor U as User
@@ -128,7 +128,7 @@ flowchart TB
 
   LG-->>UI: final state (answer + sources)
   UI-->>U: Render response + citations + disclaimer
-⸻
+```
 
 3. System Design
 
