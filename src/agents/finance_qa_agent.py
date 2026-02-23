@@ -10,9 +10,9 @@ DISCLAIMER = (
 )
 
 class FinanceQAAgent:
-    
+
     name : str = "FinanceQA_Agent"
-    
+
     def __init__(self, model: str | None = None):
         self.client = OpenAI()
         # Favor a low-latency default model for chat UX.
@@ -26,7 +26,7 @@ class FinanceQAAgent:
             "You are a helpful finance tutor for beginners. "
             "Use simple language, define jargon, and give 1 short example. "
             "Answer ONLY using the context below.\n"
-            "If the answer is not in the context, say you don’t know.\n\n"
+            "If the answer is not in the context, say you don't know.\n\n"
             f"Context:\n{context}\n\n"
             f"Disclaimer: {DISCLAIMER}"
         )
@@ -37,7 +37,7 @@ class FinanceQAAgent:
             max_output_tokens=300,
         )
         answer = self._with_disclaimer(resp.output_text.strip())
-        
+
         return AgentResponse(
             answer=answer,
             agent_name=self.name,

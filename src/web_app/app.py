@@ -1,122 +1,88 @@
-import os
+"""AI Finance Assistant — Streamlit entry point.
+
+Slim orchestrator that wires together sidebar, tabs, and theming.
+All heavy logic lives in ``src/web_app/components/``.
+"""
+
 import streamlit as st
-from openai import APIConnectionError, AuthenticationError, OpenAIError
 
-from src.workflow.graph import get_graph
+from src.web_app.styles.theme import generate_css
+from src.web_app.components.sidebar import render_sidebar
+from src.web_app.components.chat_tab import render_chat_tab
+from src.web_app.components.portfolio_tab import render_portfolio_tab
+from src.web_app.components.market_tab import render_market_tab
+from src.web_app.components.goals_tab import render_goals_tab
 
-st.set_page_config(page_title="AI Finance Assistant", page_icon="💰", layout="wide")
-st.title("AI Finance Assistant")
-st.write("Ask me anything about finance, your portfolio, or market trends!")
+# ---------------------------------------------------------------------------
+# Page config (must be the first Streamlit call)
+# ---------------------------------------------------------------------------
+st.set_page_config(
+    page_title="AI Finance Assistant",
+    page_icon="$",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
 
+# ---------------------------------------------------------------------------
+# State initialization
+# ---------------------------------------------------------------------------
 TAB_KEYS = ("chat", "portfolio", "market", "goals")
-TAB_FORCED_ROUTE = {
-    "chat": None,
-    "portfolio": "portfolio",
-    "market": "market",
-    "goals": "goal",
-}
 
+if "messages_by_tab" not in st.session_state:
+    st.session_state.messages_by_tab = {tab: [] for tab in TAB_KEYS}
 
-def init_state() -> None:
-    if "messages_by_tab" not in st.session_state:
-        st.session_state.messages_by_tab = {tab: [] for tab in TAB_KEYS}
-        legacy_messages = st.session_state.get("messages", [])
-        if legacy_messages:
-            st.session_state.messages_by_tab["chat"] = legacy_messages
-    # Keep compatibility with the old state key.
-    st.session_state.messages = st.session_state.messages_by_tab["chat"]
+# ---------------------------------------------------------------------------
+# Minimal CSS (additive only — works with Streamlit's native light theme)
+# ---------------------------------------------------------------------------
+st.markdown(f"<style>{generate_css()}</style>", unsafe_allow_html=True)
 
+try:
+    from pathlib import Path
+    static_css = (Path(__file__).parent / "styles" / "custom.css").read_text()
+    st.markdown(f"<style>{static_css}</style>", unsafe_allow_html=True)
+except FileNotFoundError:
+    pass
 
-def render_messages(tab_key: str) -> None:
-    for msg in st.session_state.messages_by_tab[tab_key]:
-        with st.chat_message(msg["role"]):
-            st.markdown(msg["content"])
-            if msg.get("sources"):
-                st.caption("Sources: " + ", ".join(msg["sources"]))
+# ---------------------------------------------------------------------------
+# Sidebar
+# ---------------------------------------------------------------------------
+render_sidebar()
 
+# ---------------------------------------------------------------------------
+# Main content
+# ---------------------------------------------------------------------------
+st.title("AI Finance Assistant")
+st.caption("Multi-agent finance assistant powered by LangGraph and OpenAI")
 
-def run_query(tab_key: str, user_input: str) -> dict:
-    payload = {"userMsg": user_input}
-    forced_route = TAB_FORCED_ROUTE[tab_key]
-    if forced_route:
-        payload["route"] = forced_route
+TAB_LABELS = ["Chat", "Portfolio", "Market", "Goals"]
+TAB_KEY_TO_INDEX = {"chat": 0, "portfolio": 1, "market": 2, "goals": 3}
 
-    try:
-        result = get_graph().invoke(payload)
-        return {
-            "role": "assistant",
-            "content": result.get("answer", ""),
-            "sources": result.get("sources", []),
-        }
-    except AuthenticationError as exc:
-        if os.getenv("OPENAI_API_KEY"):
-            msg = "OpenAI authentication failed. The API key is set but appears invalid."
-        else:
-            msg = "OpenAI API key is missing. Set `OPENAI_API_KEY` in your environment."
-        return {"role": "assistant", "content": f"{msg}\n\nDetails: {exc}", "sources": []}
-    except APIConnectionError as exc:
-        msg = "Network error connecting to OpenAI. Check your internet, DNS, or proxy settings."
-        return {"role": "assistant", "content": f"{msg}\n\nDetails: {exc}", "sources": []}
-    except OpenAIError as exc:
-        msg = "OpenAI request failed."
-        return {"role": "assistant", "content": f"{msg}\n\nDetails: {exc}", "sources": []}
-    except Exception as exc:
-        msg = "Unexpected error."
-        return {"role": "assistant", "content": f"{msg}\n\nDetails: {exc}", "sources": []}
-
-
-def submit_message(tab_key: str, user_input: str) -> None:
-    messages = st.session_state.messages_by_tab[tab_key]
-    user_message = {"role": "user", "content": user_input, "sources": []}
-    messages.append(user_message)
-
-    assistant_message = run_query(tab_key, user_input)
-    messages.append(assistant_message)
-
-
-init_state()
-tab_chat, tab_portfolio, tab_market, tab_goals = st.tabs(["Chat", "Portfolio", "Market", "Goals"])
+tab_chat, tab_portfolio, tab_market, tab_goals = st.tabs(TAB_LABELS)
 
 with tab_chat:
-    st.subheader("Chat")
-    render_messages("chat")
-    chat_input = st.chat_input("Ask a finance question", key="chat_input")
-    if chat_input:
-        submit_message("chat", chat_input)
-        st.rerun()
+    render_chat_tab()
 
 with tab_portfolio:
-    st.subheader("Portfolio (JSON input)")
-    st.write('Paste something like: `{"AAPL": 5000, "VTI": 8000, "BND": 2000}`')
-    render_messages("portfolio")
-    with st.form("portfolio_form", clear_on_submit=True):
-        portfolio_input = st.text_area("Portfolio JSON", height=120)
-        submit_portfolio = st.form_submit_button("Analyze Portfolio")
-    if submit_portfolio and portfolio_input.strip():
-        submit_message("portfolio", portfolio_input.strip())
-        st.rerun()
+    render_portfolio_tab()
 
 with tab_market:
-    st.subheader("Market")
-    st.write("Enter a ticker such as `AAPL` or `TSLA`.")
-    render_messages("market")
-    with st.form("market_form", clear_on_submit=True):
-        market_input = st.text_input("Ticker or market question")
-        submit_market = st.form_submit_button("Analyze Market")
-    if submit_market and market_input.strip():
-        submit_message("market", market_input.strip())
-        st.rerun()
+    render_market_tab()
 
 with tab_goals:
-    st.subheader("Goals (JSON input)")
-    st.write(
-        'Paste something like: `{"target_amount": 1000000, "years": 20, '
-        '"expected_annual_return": 7, "current_savings": 10000}`'
-    )
-    render_messages("goals")
-    with st.form("goals_form", clear_on_submit=True):
-        goals_input = st.text_area("Goal JSON", height=120)
-        submit_goals = st.form_submit_button("Analyze Goals")
-    if submit_goals and goals_input.strip():
-        submit_message("goals", goals_input.strip())
-        st.rerun()
+    render_goals_tab()
+
+# ---------------------------------------------------------------------------
+# Auto-switch to the correct tab when loading a conversation from sidebar
+# ---------------------------------------------------------------------------
+active_tab = st.session_state.pop("active_tab", None)
+if active_tab and active_tab in TAB_KEY_TO_INDEX:
+    tab_index = TAB_KEY_TO_INDEX[active_tab]
+    js = f"""
+    <script>
+        var tabs = window.parent.document.querySelectorAll('button[data-baseweb="tab"]');
+        if (tabs.length > {tab_index}) {{
+            tabs[{tab_index}].click();
+        }}
+    </script>
+    """
+    st.components.v1.html(js, height=0)

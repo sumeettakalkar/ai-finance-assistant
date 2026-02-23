@@ -24,7 +24,8 @@ class GraphState:
     confidence: str = ""
     sources: List[str] = field(default_factory=list)
     history: List[Tuple[str, AgentResponse]] = field(default_factory=list)
-    # You can add more fields here if needed for context or intermediate data.  
+    metadata: dict = field(default_factory=dict)
+    conversation_history: list[dict] = field(default_factory=list)
 
 def classify_route(user_message: str) -> Route:
     """Simple keyword-based routing logic to determine which agent to use."""
@@ -47,7 +48,7 @@ def classify_route(user_message: str) -> Route:
     else:
         print("Routing to FinanceQAAgent")
         return "finance_qa"
-    
+
 
 @lru_cache(maxsize=1)
 def _finance_agent() -> FinanceQAAgent:
@@ -81,6 +82,7 @@ def finance_qa_node(state: GraphState) -> Dict[str, Any]:
         "agent_name": response.agent_name,
         "confidence": response.confidence,
         "sources": response.sources,
+        "metadata": response.metadata or {},
     }
 
 def market_node(state: GraphState) -> Dict[str, Any]:
@@ -91,8 +93,9 @@ def market_node(state: GraphState) -> Dict[str, Any]:
         "agent_name": response.agent_name,
         "confidence": response.confidence,
         "sources": response.sources,
+        "metadata": response.metadata or {},
     }
-    
+
 def portfolio_node(state: GraphState) -> Dict[str, Any]:
     """Node to run the PortfolioAgent."""
     response = _portfolio_agent().run(state.userMsg)
@@ -101,8 +104,9 @@ def portfolio_node(state: GraphState) -> Dict[str, Any]:
         "agent_name": response.agent_name,
         "confidence": response.confidence,
         "sources": response.sources,
+        "metadata": response.metadata or {},
     }
-    
+
 def goal_node(state: GraphState) -> Dict[str, Any]:
     """Node to run the GoalAgent."""
     response = _goal_agent().run(state.userMsg)
@@ -111,19 +115,20 @@ def goal_node(state: GraphState) -> Dict[str, Any]:
         "agent_name": response.agent_name,
         "confidence": response.confidence,
         "sources": response.sources,
+        "metadata": response.metadata or {},
     }
-    
+
 #-- Graph Construction --#
 def build_graph():
     graph = StateGraph(GraphState)
-    
+
     # Define nodes
     graph.add_node("router", router_node)
     graph.add_node("finance_qa", finance_qa_node)
     graph.add_node("market", market_node)
     graph.add_node("portfolio", portfolio_node)
     graph.add_node("goal", goal_node)
-    
+
     # Entry point and conditional routing based on route
     graph.set_entry_point("router")
     graph.add_conditional_edges(
@@ -136,13 +141,13 @@ def build_graph():
             "goal": "goal",
         },
     )
-    
+
     # End node after agent response
     graph.add_edge("finance_qa", END)
     graph.add_edge("market", END)
     graph.add_edge("portfolio", END)
     graph.add_edge("goal", END)
-    
+
     return graph.compile()
 
 @lru_cache(maxsize=1)
