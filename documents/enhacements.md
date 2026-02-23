@@ -1,31 +1,87 @@
+# Enhancements Tracker
 
-1. Right now I am using text documents for chunking, But I need various other types of documents like PDFs and other formats and use those as source.
-2. if it cannot find a answer in the document, then it should search online for the answers. 
-3. Write a script, which goves over these 8 pages, and copies any link on these pages if the hostname is same. For each link on the page :
-Store : Page Url , parent page, page title, . - This list should also contain parent 8 pages. 
+## Completed (v2.0)
 
-Once you have master list, you can go over each link, see if that page is visited, and extract text content from the page. 
-How to avoid ads, and other things from the page  - 	•	Copy definitions + explanations
-	•	NOT ads, examples, or calculators
-    You can save them as HTML , and you HTML chunking  - but still need to remove ads. 
-    
+### Phase 1: Tools Layer Extraction
+- Extracted pure functions from agents into `src/tools/` (portfolio_tools, goal_tools, market_tools, rag_tools)
+- All agents delegate to tools while preserving their `run()` interface
+- Tools shared across agents, MCP server, and REST API
 
-Build data from
+### Phase 2: MCP Server
+- FastMCP server with 7 tools in `src/mcp/server.py`
+- Works with Claude Desktop via `claude_desktop_config.json`
+- Tools: analyze_portfolio, compute_portfolio_risk, plan_savings_goal, get_stock_quote, search_finance_knowledge, parse_portfolio_description, parse_goal_description
 
-	•	https://www.investopedia.com/terms/d/diversification.asp
-	•	https://www.investopedia.com/terms/e/etf.asp
-	•	https://www.investopedia.com/terms/s/stock.asp
-	•	https://www.investopedia.com/terms/b/bond.asp
+### Phase 3: Natural Language Parsing
+- OpenAI function calling for NL-to-JSON parsing (`src/tools/parsing_tools.py`)
+- Portfolio: "I have $5k in Apple" -> `{"AAPL": 5000}`
+- Goals: "Save $1M in 20 years at 7%" -> `{"target_amount": 1000000, ...}`
+- GPT-4o Vision API for brokerage screenshot parsing
+- Array-based schema (not additionalProperties) for gpt-4o-mini compatibility
 
-    	•	https://www.bogleheads.org/wiki/Three-fund_portfolio
-	•	https://www.bogleheads.org/wiki/Asset_allocation
+### Phase 4: AgentResponse Metadata
+- Added `metadata: dict | None` field to `AgentResponse`
+- Extended `GraphState` with `metadata` and `conversation_history`
+- Portfolio/Goal agents populate metadata with structured chart data
 
-    	•	https://www.investor.gov/introduction-investing
-	•	https://www.investor.gov/introduction-investing/investing-basics/investment-products
+### Phase 5: Interactive Charts
+- Plotly chart builders in `src/web_app/components/charts.py`
+- Portfolio: allocation donut + asset mix bar
+- Market: price history line chart
+- Goals: projected savings area chart
+- Unique chart keys per message to prevent Streamlit duplicate element errors
 
-    others :	•	
-    Morningstar (some pages are gated)
-	•	Vanguard educational pages
-	•	Fidelity Learning Center
+### Phase 6: Conversation History
+- SQLite persistence in `src/storage/` with WAL mode
+- Sidebar shows past 20 conversations with [Tab] badges
+- Click to load + auto-switch to correct tab (JS injection)
+- Create, load, delete conversations
 
-	explore skills for 
+### Phase 7: UI Overhaul
+- Split monolithic app.py into component architecture
+- Components: sidebar, chat_tab, portfolio_tab, market_tab, goals_tab, charts, audio_input, file_upload, _shared
+- Additive-only CSS theming (no color overrides, works with Streamlit's native theme)
+- Input mode selectors per tab
+
+### Phase 8: Audio Input
+- Voice input via `audio-recorder-streamlit` + OpenAI Whisper
+- Available on all 4 tabs (Chat, Portfolio, Market, Goals)
+- MD5 hash dedup prevents infinite rerun loops
+- Transcribed text feeds into NL parsing pipeline for Portfolio/Goals
+
+### Phase 9: API Enhancements + Tests
+- FastAPI updated to v2.0.0 with 12 endpoints
+- New endpoints: POST /api/portfolio/natural, POST /api/portfolio/image, POST /api/goals/natural, GET /api/conversations, GET /api/conversations/{id}
+- 76 tests across 8 test files (up from 13 in v1.0)
+
+---
+
+## Future Enhancements
+
+### RAG Improvements
+1. Support PDF and HTML documents in the knowledge base (pdfplumber already in requirements)
+2. Web crawling script to build knowledge base from Investopedia, Bogleheads, Investor.gov
+3. Strip ads/navigation from crawled pages, keep only definitions and explanations
+4. Chunk-level source citations with per-document metadata (URL, title, parent page)
+5. Web search fallback when FAISS has no relevant context
+6. Hybrid search (keyword + semantic) for better retrieval
+
+### Agents
+7. LLM-based intelligent router (replace keyword classifier for ambiguous queries)
+8. News summarization agent (market news via NewsAPI or similar)
+9. Portfolio rebalancing suggestions based on target allocation
+10. Risk tolerance questionnaire agent
+11. Multi-turn conversation context for all agents (currently only FinanceQA uses history)
+
+### UI/UX
+12. PDF upload support for portfolio statements
+13. Export conversation history as PDF/markdown
+14. Real-time streaming responses (Streamlit's `st.write_stream`)
+15. Responsive mobile layout improvements
+
+### Infrastructure
+16. User authentication and per-user data isolation
+17. Rate limiting on API endpoints
+18. Async agent execution for parallel tool calls
+19. Monitoring and alerting (CloudWatch, Sentry)
+20. CI/CD pipeline with GitHub Actions

@@ -1,0 +1,24 @@
+/* Static CSS overrides for AI Finance Assistant */
+
+/* Smoother scrolling */
+.main .block-container {
+    scroll-behavior: smooth;
+}
+
+/* Better form styling */
+.stForm {
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+/* Tab active indicator */
+.stTabs [data-baseweb="tab-list"] button[aria-selected="true"] {
+    border-bottom-color: #636EFA;
+    border-bottom-width: 3px;
+}
+
+/* Chat input styling */
+.stChatInput {
+    border-radius: 12px;
+}

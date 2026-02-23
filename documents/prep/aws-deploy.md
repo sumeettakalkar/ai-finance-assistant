@@ -1,11 +1,11 @@
-# AWS Deployment Guide — AI Finance Assistant
+# AWS Deployment Guide — AI Finance Assistant v2.0
 
 This guide walks you through deploying the AI Finance Assistant to AWS EC2 with a public URL. By the end you will have two services running:
 
 | Service | URL | What it is |
 |---------|-----|-----------|
-| **FastAPI** | `http://<EC2_IP>:8000/docs` | Interactive API documentation (Swagger UI) |
-| **Streamlit** | `http://<EC2_IP>:8501` | Original chat/tab UI |
+| **FastAPI** | `http://<EC2_IP>:8000/docs` | Interactive API documentation (Swagger UI) — 12 endpoints including NL parsing, image analysis, and conversation history |
+| **Streamlit** | `http://<EC2_IP>:8501` | Full UI with 4 tabs, multi-modal input (text/JSON/voice/image), interactive Plotly charts, and persistent conversation history |
 
 ---
 
@@ -14,11 +14,19 @@ This guide walks you through deploying the AI Finance Assistant to AWS EC2 with 
 ```
 Your Browser
     │
-    ├── :8000  →  FastAPI (uvicorn)   ─── LangGraph Router ──┬── FinanceQA Agent (RAG + OpenAI)
-    │                                                         ├── Market Agent (yfinance)
-    └── :8501  →  Streamlit UI        ─── LangGraph Router ──┼── Portfolio Agent
-                                                              └── Goal Agent
+    ├── :8000  →  FastAPI (uvicorn)  ─── src/tools/ ───┬── FinanceQA Agent (RAG + FAISS + OpenAI)
+    │              12 REST endpoints                    ├── Market Agent (yfinance + TTL cache)
+    │              NL parsing, image,                   ├── Portfolio Agent (HHI + charts)
+    │              conversations API                    └── Goal Agent (annuity math + charts)
+    │
+    └── :8501  →  Streamlit UI       ─── LangGraph ────┤
+                   4 tabs, voice,                       │
+                   charts, sidebar,                     ├── Parsing Layer (OpenAI function calling / Vision)
+                   SQLite history                       ├── Plotly Charts (donut, bar, line, area)
+                                                        └── SQLite (conversations.db)
+
 Both services run inside Docker containers on a single EC2 t2.micro instance.
+The MCP server (python -m src.mcp.server) is for local Claude Desktop use, not deployed to EC2.
 ```
 
 ---
@@ -374,9 +382,10 @@ Replace `<YOUR_EC2_PUBLIC_IP>` with your actual IP:
 
 | URL | What you get |
 |-----|-------------|
-| `http://<YOUR_EC2_PUBLIC_IP>:8000/docs` | FastAPI Swagger UI — try all endpoints interactively |
-| `http://<YOUR_EC2_PUBLIC_IP>:8000/api/market/AAPL` | Direct API call (returns JSON) |
-| `http://<YOUR_EC2_PUBLIC_IP>:8501` | Streamlit chat UI |
+| `http://<YOUR_EC2_PUBLIC_IP>:8000/docs` | FastAPI Swagger UI — 12 endpoints including NL parsing, image analysis, conversation history |
+| `http://<YOUR_EC2_PUBLIC_IP>:8000/api/market/AAPL` | Direct API call (returns JSON with metadata for charts) |
+| `http://<YOUR_EC2_PUBLIC_IP>:8000/api/portfolio/natural` | POST NL description, get portfolio analysis |
+| `http://<YOUR_EC2_PUBLIC_IP>:8501` | Full Streamlit UI with multi-modal input, Plotly charts, conversation history |
 
 Share the Swagger URL in your resume/portfolio — it lets interviewers test the API without any setup.
 
@@ -465,6 +474,12 @@ Asymmetric SSH authentication. AWS keeps the **public key** on the instance (`~/
 
 ### Multi-Agent Architecture talking points
 
+**Layered architecture:**
+- **Tools layer** (`src/tools/`): Pure functions shared by agents, MCP server, and REST API — single source of truth
+- **Agent layer** (`src/agents/`): 4 agents implementing a common Protocol → `AgentResponse`
+- **Workflow layer** (`src/workflow/graph.py`): LangGraph StateGraph with router node and conditional edges
+- **Presentation layer** (`src/web_app/`): Streamlit component architecture with Plotly charts
+
 **LangGraph** is used for orchestration:
 - Represents the workflow as a directed graph where nodes are agents and edges are routing decisions
 - Separates routing logic from agent logic — the router node classifies intent; agent nodes handle execution
@@ -480,6 +495,18 @@ Asymmetric SSH authentication. AWS keeps the **public key** on the instance (`~/
 2. Keyword classifier (`classify_route()`) matches patterns
 3. Default fallback to `finance_qa`
 
+**Multi-modal input:**
+- Text/JSON (direct input), Natural Language (OpenAI function calling → JSON), Voice (Whisper → text → NL parse), Image (GPT-4o Vision → JSON)
+- Array-based function calling schemas for reliable parsing with gpt-4o-mini
+
+**MCP Server:**
+- 7 tools via FastMCP for Claude Desktop integration
+- Delegates to same `src/tools/` functions — consistent behavior across all consumers
+
+**Testing discipline:**
+- 76 tests across 8 files covering tools, agents, MCP, parsing, charts, storage, and error handling
+- Mocked OpenAI/yfinance calls for deterministic testing
+
 ### What would you do differently in production?
 
 This is a great question to show maturity. Expected answer:
@@ -490,5 +517,7 @@ This is a great question to show maturity. Expected answer:
 - **CI/CD**: GitHub Actions pipeline that builds and pushes a Docker image to ECR, then triggers a new ECS deployment on every push to `main`.
 - **Monitoring**: CloudWatch for logs, metrics, and alarms (e.g., alert if error rate > 5%).
 - **Load balancing**: Application Load Balancer in front of EC2 for zero-downtime deployments and health checks.
-- **Persistent storage**: If conversation history is added, use DynamoDB (serverless) or RDS PostgreSQL.
+- **Database**: Migrate from SQLite to RDS PostgreSQL for production conversation storage (SQLite is great for local dev but doesn't scale for concurrent writes).
 - **Multi-AZ**: Deploy across two Availability Zones for high availability.
+- **Authentication**: Add user auth (OAuth/JWT) for per-user conversation isolation.
+- **Rate limiting**: Protect API endpoints from abuse (especially NL parsing and image endpoints that call OpenAI).
